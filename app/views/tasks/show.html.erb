@@ -1,4 +1,7 @@
 <!-- views/tasks/show.html.erb -->
 <h1><%= @task.title %></h1>
 <p><%= @task.details %></p>
+<p><%= check_box_tag @task.completed %></p>
 <%= link_to 'Back to tasks', tasks_path %>
+
+<%= link_to "Edit", edit_task_path(@task) %>
